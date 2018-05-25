@@ -19,6 +19,7 @@ import VisiMisi from  './src/VisiMisi';
 import Profil from  './src/Profil';
 import Fairid from  './src/Fairid';
 import Umi from  './src/Umi';
+import Kontak from  './src/Kontak';
 
 const NavFairid = StackNavigator({
   SplashScreen: {
@@ -38,6 +39,9 @@ const NavFairid = StackNavigator({
   },
   Umi: {
     screen: Umi
+  },
+  Kontak: {
+    screen: Kontak
   }
 }, {
   headerMode: 'none',
