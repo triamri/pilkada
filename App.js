@@ -16,6 +16,9 @@ import {
 import SplashScreen from  './src/SplashScreen';
 import Home from  './src/Home';
 import VisiMisi from  './src/VisiMisi';
+import Profil from  './src/Profil';
+import Fairid from  './src/Fairid';
+import Umi from  './src/Umi';
 
 const NavFairid = StackNavigator({
   SplashScreen: {
@@ -26,10 +29,19 @@ const NavFairid = StackNavigator({
   },
   VisiMisi: {
     screen: VisiMisi
+  },
+  Profil: {
+    screen: Profil
+  },
+  Fairid: {
+    screen: Fairid
+  },
+  Umi: {
+    screen: Umi
   }
 }, {
   headerMode: 'none',
-  initialRouteName: 'VisiMisi'
+  initialRouteName: 'Profil'
 });
 
 const instructions = Platform.select({
