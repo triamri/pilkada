@@ -45,7 +45,7 @@ const NavFairid = StackNavigator({
   }
 }, {
   headerMode: 'none',
-  initialRouteName: 'Profil'
+  initialRouteName: 'SplashScreen'
 });
 
 const instructions = Platform.select({
