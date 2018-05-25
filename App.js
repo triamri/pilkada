@@ -15,6 +15,7 @@ import {
 
 import SplashScreen from  './src/SplashScreen';
 import Home from  './src/Home';
+import VisiMisi from  './src/VisiMisi';
 
 const NavFairid = StackNavigator({
   SplashScreen: {
@@ -22,10 +23,13 @@ const NavFairid = StackNavigator({
   },
   Home: {
     screen: Home
+  },
+  VisiMisi: {
+    screen: VisiMisi
   }
 }, {
   headerMode: 'none',
-  initialRouteName: 'Home'
+  initialRouteName: 'VisiMisi'
 });
 
 const instructions = Platform.select({

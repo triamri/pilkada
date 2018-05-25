@@ -2,5 +2,9 @@
     {
         "merged": "/home/jadoel/Documents/project/fairid/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/home/jadoel/Documents/project/fairid/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/jadoel/Documents/project/pilkada/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/jadoel/Documents/project/pilkada/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
 ]
