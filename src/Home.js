@@ -33,12 +33,12 @@ export default class Home extends Component {
         return (
             <Container>
                 <Content>
-                <Grid>
+                <Grid style={{ alignSelf: 'center' }}>
                 <Col style={{
                     backgroundColor: '#635DB7', 
                     alignItems: 'center',
                     width: '100%', 
-                    height: 300
+                    height: 400
                 }}>
                     <ImageSlider images={[
                         'https://1.bp.blogspot.com/-4Ivyx1de8U0/WoXb4UH9GmI/AAAAAAAAClo/kuAEy6_SGJ81JRgTggR_ZtCS54ZuxDA3wCLcBGAs/s1600/PASLON%2BPILWAKOT.jpg',
@@ -51,8 +51,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100 
+                                width: 80,
+                                height: 80 
                             }} 
                             source={{
                                 uri: 'https://seeklogo.com/images/P/partai-golkar-logo-E1EB177BE8-seeklogo.com.png'
@@ -62,8 +62,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100
+                                width: 80,
+                                height: 80
                             }} 
                             source={{
                                 uri: 'http://1.bp.blogspot.com/-hjuz6kRg3Ng/UDDrMBMLypI/AAAAAAAAAOY/78w_2zXKWcM/s1600/LOGO+PARTAI+DEMOKRAT.png'
@@ -73,8 +73,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100
+                                width: 80,
+                                height: 80
                             }} 
                             source={{
                                 uri: 'http://4.bp.blogspot.com/-hN4CZLKN6wY/UHfQfVDLPEI/AAAAAAAAAkI/5ib6MvIlZvg/s1600/Partai+Amanat+Nasional+-+PAN.png'
@@ -86,8 +86,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100 
+                                width: 80,
+                                height: 80 
                             }} 
                             source={{
                                 uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/7/73/Logo_PPP.svg/1024px-Logo_PPP.svg.png'
@@ -97,8 +97,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100
+                                width: 80,
+                                height: 80
                             }} 
                             source={{
                                 uri: 'http://3.bp.blogspot.com/-Ec3WnfPiSjQ/UH98hW6F8lI/AAAAAAAAAk4/egZp22rvNsE/s1600/Partai+Keadilan+Sejahtera+-+PKS.png'
@@ -108,8 +108,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100
+                                width: 80,
+                                height: 80
                             }} 
                             source={{
                                 uri: 'https://3.bp.blogspot.com/-2N0QJ3kFn4Y/VuQ32cdOMvI/AAAAAAAAAW8/wl_vGwYlFLg_CrnzjCRVUTehbN7j9xirA/s1600/Download%2BLogo%2BPARTAI%2BPERINDO%2BVector%2BCDR.jpg'
@@ -121,8 +121,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100 
+                                width: 80,
+                                height: 80 
                             }} 
                             source={{
                                 uri: 'https://mediaharapan.com/wp-content/uploads/2017/06/22/IMG_20170622_225506.jpg'
@@ -132,8 +132,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100
+                                width: 80,
+                                height: 80
                             }} 
                             source={{
                                 uri: 'http://3.bp.blogspot.com/--l9B_3d6E_M/UH-RJupzXiI/AAAAAAAAApI/2HUnj19PTmM/s1600/Partai+Bulan+Bintang+-+PBB.png'
@@ -143,8 +143,8 @@ export default class Home extends Component {
                     <Col style={{ margin: 10, height: 100 }}>
                         <Thumbnail 
                             style={{ 
-                                width: 100,
-                                height: 100
+                                width: 80,
+                                height: 80
                             }} 
                             source={{
                                 uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/5/59/Logo_Partai_Garuda.svg/1024px-Logo_Partai_Garuda.svg.png'
