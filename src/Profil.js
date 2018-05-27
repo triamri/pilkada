@@ -20,7 +20,7 @@ import NavFooter from './NavFooter';
 
 export default class Profil extends Component {
     render () {
-        const { navigate } = this.props.navigation;
+        const { navigate, goBack } = this.props.navigation;
         const { routeName } = this.props.navigation.state;
         return (
             <Container>
@@ -44,7 +44,7 @@ export default class Profil extends Component {
                         </Grid>
                     </ImageBackground>
                 </Content>
-                <NavFooter navigate={navigate} routeName={routeName} />                
+                <NavFooter navigate={navigate} goBack={goBack} routeName={routeName} />                
             </Container>
         )
     }

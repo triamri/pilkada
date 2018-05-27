@@ -28,7 +28,7 @@ import NavFooter from './NavFooter';
 
 export default class Home extends Component {
     render () {
-        const { navigate } = this.props.navigation;
+        const { navigate,goBack } = this.props.navigation;
         const { routeName } = this.props.navigation.state;
         return (
             <Container>
@@ -151,7 +151,7 @@ export default class Home extends Component {
                     </Col>
                 </Grid>
                 </Content>
-                <NavFooter navigate={navigate} routeName={routeName} />
+                <NavFooter navigate={navigate} goBack={goBack} routeName={routeName} />
             </Container>
         )
     }

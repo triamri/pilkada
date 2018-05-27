@@ -26,7 +26,7 @@ import NavFooter from './NavFooter';
 
 export default class Kontak extends Component {
     render () {
-        const { navigate } = this.props.navigation;
+        const { navigate, goBack } = this.props.navigation;
         const { routeName } = this.props.navigation.state;
         return (
             <Container>
@@ -74,7 +74,7 @@ export default class Kontak extends Component {
                 </ListItem>
                 </List>
                 </Content>
-                <NavFooter navigate={navigate} routeName={routeName} />
+                <NavFooter navigate={navigate} goBack={goBack} routeName={routeName} />
             </Container>
         )
     }
