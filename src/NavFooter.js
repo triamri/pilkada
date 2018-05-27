@@ -46,25 +46,25 @@ export default class NavFooter extends Component {
     return (
       <Footer>
         <FooterTab>
-          <Button vertical
+          <Button active={ this.props.routeName === 'Home' ? true : false } vertical
             onPress={() => navigate('Home')}
           >
             <Icon name="ios-home-outline" />
             <Text>Beranda</Text>
           </Button>
-          <Button vertical
+          <Button active={ this.props.routeName === 'VisiMisi' ? true : false } vertical
             onPress={() => navigate('VisiMisi')}
           >
             <Icon name="ios-list-box-outline" />
             <Text>Visi & Misi</Text>
           </Button>
-          <Button vertical
+          <Button active={ this.props.routeName === 'Profil' || this.props.routeName === 'Fairid' || this.props.routeName === 'Umi' ? true : false } vertical
             onPress={() => navigate('Profil')}
           >
             <Icon name="person" />
             <Text>Profile</Text>
           </Button>
-          <Button vertical
+          <Button active={ this.props.routeName === 'Kontak' ? true : false } vertical
             onPress={() => navigate('Kontak')}
           >
             <Icon name="ios-exit-outline" />
