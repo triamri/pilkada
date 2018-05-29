@@ -12,7 +12,10 @@ import {
     Content,
     Thumbnail,
     Button,
-    Icon
+    Icon,
+    Tab, 
+    Tabs, 
+    ScrollableTab
   } from 'native-base';
 
 import { Col, Row, Grid } from 'react-native-easy-grid';
@@ -33,7 +36,7 @@ export default class Fairid extends Component {
                         source={{ uri: 'https://4.bp.blogspot.com/-h3FhBWalHyY/WmsDbYpE_QI/AAAAAAAAbog/zd7OUG4U_vI-a9A3R9Y_ZJBv1m5xH7xoQCLcBGAs/s1600/fairid%2Bumi%2Bmenang.jpg' }}
                     >
                     </ImageBackground>
-                        <Grid style={{ marginTop: -300 }}>
+                    <Grid style={{ marginTop: -300 }}>
                         <Col style={{
                             width: '100%'
                             }}
@@ -43,10 +46,12 @@ export default class Fairid extends Component {
                                 marginTop: 250 
                                 }}
                             >
-                                <Text style={{fontSize: 24}} >Profil</Text>
+                                <Text style={{fontSize: 24, fontWeight: 'bold'}} >FAIRID NAPARIN</Text>
                             </Row>
                         </Col>
-                        </Grid>
+                    </Grid>
+                    <Tabs renderTabBar={()=> <ScrollableTab />}>
+                        <Tab tabStyle={{backgroundColor: 'green'}} textStyle={{color: '#fff'}} heading="PROFIL">
                         <Grid>
                             <Col style={{ backgroundColor: 'yellow', height: 400, padding:10 }}>
                                 <Text style={{fontSize: 12, color: 'black'}} >Nama Lengkap : Fairid Naparin Razak, SE</Text>
@@ -54,11 +59,21 @@ export default class Fairid extends Component {
                                 <Text style={{fontSize: 12, color: 'black'}} >Alamat : Jln. G. Obos No. 66</Text>
                                 <Text style={{fontSize: 12, color: 'black'}} >Agama	: Islam</Text>
                                 <Text style={{fontSize: 12, color: 'black'}} >Pendidikan Terakhir :	S1 Universitas Diponegoro Fakultas Ekonomi</Text>
-                                <Text style={{fontSize: 12, color: 'black'}} >Pengalaman Bekerja :</Text>
+                            </Col>
+                        </Grid>
+                        </Tab>
+                        <Tab tabStyle={{backgroundColor: 'green'}} textStyle={{color: '#fff'}} heading="PENGALAMAN BEKERJA">
+                        <Grid>
+                            <Col style={{ backgroundColor: 'yellow', height: 400, padding:10 }}>
                                 <Text style={{fontSize: 12, color: 'black'}} >2012-2017 Direktur CV. Kacapiring</Text>
                                 <Text style={{fontSize: 12, color: 'black'}} >2012-2016 Direktur PT. Nafama</Text>
                                 <Text style={{fontSize: 12, color: 'black'}} >2012-2017 Direktur Kacapiring Putra Estate (Perkebunan)</Text>
-                                <Text style={{fontSize: 12, color: 'black'}} >Pengalaman Organisasi	: </Text>
+                            </Col>
+                        </Grid>
+                        </Tab>
+                        <Tab tabStyle={{backgroundColor: 'green'}} textStyle={{color: '#fff'}} heading="ORGANISASI">
+                        <Grid>
+                            <Col style={{ backgroundColor: 'yellow', height: 400, padding:10 }}>
                                 <Text style={{fontSize: 12, color: 'black'}} >2004 MAPALA Fakultas Ekonomi Universitas Diponegoro</Text>
                                 <Text style={{fontSize: 12, color: 'black'}} >2005 Wakil Ketua BEM Fakultas Ekonomi Universitas Diponegoro</Text>
                                 <Text style={{fontSize: 12, color: 'black'}} >2012-2017 Sekretaris DPD AMPI Prov. Kalimantan Tengah</Text>
@@ -68,6 +83,8 @@ export default class Fairid extends Component {
                                 <Text style={{fontSize: 12, color: 'black'}} >2017-2018 Plt. Ketua DPD Partai Golongan Karya Prov. Kalimantan Tengah</Text>
                             </Col>
                         </Grid>
+                        </Tab>
+                    </Tabs>
                 </Content>
                 <NavFooter navigate={navigate} goBack={goBack} routeName={routeName} />                
             </Container>
